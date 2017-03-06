@@ -9,3 +9,7 @@ data "aws_ecs_cluster" "ecs" {
 output "task_running" {
   value = "${data.aws_ecs_cluster.ecs.running_tasks_count}"
 }
+
+output "task_stopped" {
+  value = "${data.aws_ecs_cluster.ecs.pending_tasks_count}"
+}
