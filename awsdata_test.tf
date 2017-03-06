@@ -1,9 +1,9 @@
 provider "aws" {
-  region = "ap-southeast-2"
+  region = "us-east-1"
 }
 
 data "aws_ecs_cluster" "ecs" {
-  cluster_name = "ECS-Test-ECS-IB3UMN9F6XBU-ECSCluster-I9TRCTQQZ9LA"
+  cluster_name = "ash-test"
 }
 
 output "task_running" {
